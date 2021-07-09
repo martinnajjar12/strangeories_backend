@@ -1,6 +1,6 @@
 class Api::V1::LikesController < ApplicationController
   def create
-    story = Story.find(params[:id])
+    story = Story.find(params[:story_id])
 
     like = story.likes.build(likes_params)
 
