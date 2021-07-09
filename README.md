@@ -6,7 +6,6 @@
 
 - Ruby 2.7.1
 - Rails 6.1.4
-- Devise Auth Token
 - Rack CORS
 - RSpec
 - ShouldaMatchers
@@ -14,7 +13,7 @@
 
 ## Live Demo
 
-The app is published on https://caloriesapi.heroku.com/
+The app is published on https://strangeories.herokuapp.com/
 
 ## Getting Started
 
@@ -28,7 +27,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-<p>Clone this repo either by typing `git clone https://github.com/martinnajjar12/calories-backend` (You must have git installed on your local machine in this case) or download a zip version of the code from GitHub.</p>
+<p>Clone this repo either by typing `git clone https://github.com/martinnajjar12/strangeories_backend` (You must have git installed on your local machine in this case) or download a zip version of the code from GitHub.</p>
 
 <p>Install the gems with:</p>
 
@@ -58,17 +57,8 @@ To test the application please run this command:
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/martinnajjar12/calories-backend/issues).
+Feel free to check the [issues page](https://github.com/martinnajjar12/strangeories_backend/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- [Microverse](https://microverse.org)
-- Lucidchart (for creating the database diagram)
-
-### 📝 License
-
-This project is [MIT](https://github.com/martinnajjar12/calories-backend/blob/development/LICENSE) licensed.
