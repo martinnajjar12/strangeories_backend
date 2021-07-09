@@ -1,5 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe Story, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe 'association' do
+    it { should have_many(:likes) }
+    it { should have_many(:dislikes) }
+  end
 end
