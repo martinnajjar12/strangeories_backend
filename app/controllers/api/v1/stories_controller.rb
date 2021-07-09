@@ -13,10 +13,8 @@ class Api::V1::StoriesController < ApplicationController
       render json: new_story.errors, status: 422
     end
   end
-  
-  def show
 
-  end
+  def show; end
 
   def story_params
     params.permit(:title, :description, :image_url, :author)
