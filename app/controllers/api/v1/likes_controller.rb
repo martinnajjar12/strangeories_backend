@@ -7,7 +7,7 @@ class Api::V1::LikesController < ApplicationController
     if like.save
       render json: story, status: 201
     else
-      render json: story.errors, status: 422
+      render json: like.errors, status: 422
     end
   end
 
