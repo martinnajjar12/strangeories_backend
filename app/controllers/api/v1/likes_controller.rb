@@ -4,6 +4,8 @@ class Api::V1::LikesController < ApplicationController
 
     like = story.likes.build(likes_params)
 
+    like.user_ip = request.remote_ip
+
     if like.save
       render json: story, status: 201
     else

@@ -8,5 +8,6 @@ class ApplicationController < ActionController::API
 
   def set_current_ip
     Dislike.current_ip = request.remote_ip
+    Like.current_ip = request.remote_ip
   end
 end
