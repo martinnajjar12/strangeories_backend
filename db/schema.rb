@@ -10,38 +10,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_12_212921) do
-
+ActiveRecord::Schema.define(version: 20_210_712_212_921) do
   # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+  enable_extension 'plpgsql'
 
-  create_table "dislikes", force: :cascade do |t|
-    t.bigint "story_id", null: false
-    t.integer "count"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.string "user_ip"
-    t.index ["story_id"], name: "index_dislikes_on_story_id"
+  create_table 'dislikes', force: :cascade do |t|
+    t.bigint 'story_id', null: false
+    t.integer 'count'
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
+    t.string 'user_ip'
+    t.index ['story_id'], name: 'index_dislikes_on_story_id'
   end
 
-  create_table "likes", force: :cascade do |t|
-    t.bigint "story_id", null: false
-    t.integer "count"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.string "user_ip"
-    t.index ["story_id"], name: "index_likes_on_story_id"
+  create_table 'likes', force: :cascade do |t|
+    t.bigint 'story_id', null: false
+    t.integer 'count'
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
+    t.string 'user_ip'
+    t.index ['story_id'], name: 'index_likes_on_story_id'
   end
 
-  create_table "stories", force: :cascade do |t|
-    t.string "title"
-    t.string "author"
-    t.string "image_url"
-    t.string "description"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+  create_table 'stories', force: :cascade do |t|
+    t.string 'title'
+    t.string 'author'
+    t.string 'image_url'
+    t.string 'description'
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
   end
 
-  add_foreign_key "dislikes", "stories"
-  add_foreign_key "likes", "stories"
+  add_foreign_key 'dislikes', 'stories'
+  add_foreign_key 'likes', 'stories'
 end
