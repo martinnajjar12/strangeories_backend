@@ -1,24 +1,64 @@
-# README
+<h1 align='center'>Strangeories Backend - Rails API</h1>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Backend repository that servers API for the Strangeories App. You can find the frontend repo by visiting this [link](https://github.com/martinnajjar12/strangeories)
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
+- Ruby 2.7.1
+- Rails 6.1.4
+- Rack CORS
+- RSpec
+- ShouldaMatchers
+- Active Model Serializer
 
-* System dependencies
+## Live Demo
 
-* Configuration
+The app is published on https://strangeories.herokuapp.com/
 
-* Database creation
+## Getting Started
 
-* Database initialization
+To get a local copy up and running follow these simple example steps.
 
-* How to run the test suite
+### Prerequisites
 
-* Services (job queues, cache servers, search engines, etc.)
+- Ruby 2.7.1
+- Rails 6.1.3
+- Code Editor
 
-* Deployment instructions
+### Setup
 
-* ...
+<p>Clone this repo either by typing `git clone https://github.com/martinnajjar12/strangeories_backend` (You must have git installed on your local machine in this case) or download a zip version of the code from GitHub.</p>
+
+<p>Install the gems with:</p>
+
+```
+  bundle install
+```
+
+### Usage
+
+Type `rails s` to start the server on port 3000
+
+### Run tests
+
+To test the application please run this command:
+
+```
+  rspec
+```
+
+## Author: Martin Najjar
+
+- Github: [@martinnajjar12](https://github.com/martinnajjar12)
+- Twitter: [@martin_najjar](https://twitter.com/martin_najjar)
+- LinkedIn: [Martin Najjar](https://www.linkedin.com/in/martinnajjar12/)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/martinnajjar12/strangeories_backend/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
