@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+story = Story.create!(title: 'Hello World!', author: 'Martin Najjar', image_url: 'https://images-na.ssl-images-amazon.com/images/I/91ooh7V7opL.jpg', description: 'This story is seeded from the development')
+
+like = Like.create!(count: 1, story_id: 1)
