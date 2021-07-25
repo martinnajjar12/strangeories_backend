@@ -1,5 +1,5 @@
 class Story < ApplicationRecord
-  cattr_accessor :current
+  validates_prescense_of :title, :description, :image_url
 
   has_many :likes
   has_many :dislikes
