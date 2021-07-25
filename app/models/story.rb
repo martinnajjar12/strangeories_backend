@@ -3,4 +3,5 @@ class Story < ApplicationRecord
 
   has_many :likes
   has_many :dislikes
+  belongs_to :author
 end
