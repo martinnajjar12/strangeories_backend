@@ -1,8 +1,9 @@
 class StorySerializer < ActiveModel::Serializer
-  attributes :id, :title, :author, :description, :image_url
+  attributes :id, :title, :description, :image_url
 
   has_many :likes
   has_many :dislikes
+  belongs_to :author
 
   class LikeSerializer < ActiveModel::Serializer
     attributes :count
@@ -10,5 +11,9 @@ class StorySerializer < ActiveModel::Serializer
 
   class DislikeSerializer < ActiveModel::Serializer
     attributes :count
+  end
+
+  class AuthorSerializer < ActiveModel::Serializer
+    attributes :name
   end
 end
