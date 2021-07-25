@@ -1,6 +1,6 @@
 class Api::V1::DislikesController < ApplicationController
   def create
-    if (author_signed_in?)
+    if author_signed_in?
       dislike = current_author.dislikes.new(story_id: params[:story_id])
 
       if dislike.save
