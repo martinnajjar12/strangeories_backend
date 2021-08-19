@@ -1,6 +1,6 @@
 class Api::V1::StoriesController < ApplicationController
   def index
-    stories = Story.all
+    stories = Story.with_attached_image.all
     render json: stories, status: 200
   end
 
@@ -21,6 +21,6 @@ class Api::V1::StoriesController < ApplicationController
   def show; end
 
   def story_params
-    params.permit(:title, :description, :image_url)
+    params.permit(:title, :description, :image_url, :image)
   end
 end
