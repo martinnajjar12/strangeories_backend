@@ -1,12 +1,10 @@
 class ApplicationController < ActionController::API
-  before_action :set_current_ip, :set_current_story
+  include DeviseTokenAuth::Concerns::SetUserByToken
+  before_action :configure_permitted_parameters, if: :devise_controller?
 
-  def set_current_story
-    Story.current = Story.find(params[:story_id]) if params.keys.include?('story_id')
-  end
+  protected
 
-  def set_current_ip
-    Dislike.current_ip = request.remote_ip
-    Like.current_ip = request.remote_ip
+  def configure_permitted_parameters
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:name])
   end
 end
