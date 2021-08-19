@@ -21,6 +21,6 @@ class Api::V1::StoriesController < ApplicationController
   def show; end
 
   def story_params
-    params.permit(:title, :description, :image_url, :image)
+    params.permit(:title, :description, :image)
   end
 end

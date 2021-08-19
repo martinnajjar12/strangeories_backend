@@ -4,6 +4,7 @@ class Author < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   include DeviseTokenAuth::Concerns::User
+  validates_presence_of :name
 
   has_many :likes
   has_many :dislikes
