@@ -11,7 +11,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
 
     resource '*',
       headers: :any,
-      methods: %i[get post put patch delete options head]
-      expose: %i[access-token uid client expiry token-type]
+      methods: [:get, :post, :put, :patch, :delete, :options, :head],
+      expose: ['access-token', 'uid', 'client', 'expiry', 'token-type']
   end
 end
