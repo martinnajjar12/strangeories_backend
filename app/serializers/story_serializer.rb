@@ -19,6 +19,6 @@ class StorySerializer < ActiveModel::Serializer
   end
 
   def image_url
-    rails_blob_path(object.image, only_path: true) if object.image.attached?
+    object.image.url
   end
 end
