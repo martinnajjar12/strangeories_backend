@@ -6,14 +6,6 @@ class StorySerializer < ActiveModel::Serializer
   has_many :dislikes
   belongs_to :author
 
-  class LikeSerializer < ActiveModel::Serializer
-    attributes :count
-  end
-
-  class DislikeSerializer < ActiveModel::Serializer
-    attributes :count
-  end
-
   class AuthorSerializer < ActiveModel::Serializer
     attributes :name
   end
