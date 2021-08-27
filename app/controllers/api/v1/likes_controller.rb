@@ -2,6 +2,7 @@ class Api::V1::LikesController < ApplicationController
   def create
     if author_signed_in?
       like = current_author.likes.new(story_id: params[:story_id])
+      story = Story.find(params[:story_id])
 
       if like.save
         render json: story, status: 201

@@ -1,5 +1,5 @@
 class Like < ApplicationRecord
-  validates :author_id, uniqueness: { scope: :story_id }
+  validates_uniqueness_of :author_id, scope: :story
 
   belongs_to :story
   belongs_to :author
