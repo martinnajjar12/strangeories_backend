@@ -6,9 +6,9 @@
 
 - Ruby 2.7.1
 - Rails 6.1.4
+- AWS S3 Bucket
+- PostgreSQL
 - Rack CORS
-- RSpec
-- ShouldaMatchers
 - Active Model Serializer
 
 ## Live Demo
@@ -31,21 +31,13 @@ To get a local copy up and running follow these simple example steps.
 
 <p>Install the gems with:</p>
 
-```
-  bundle install
+```Rails
+bundle install
 ```
 
 ### Usage
 
 Type `rails s` to start the server on port 3000
-
-### Run tests
-
-To test the application please run this command:
-
-```
-  rspec
-```
 
 ## Author: Martin Najjar
 
